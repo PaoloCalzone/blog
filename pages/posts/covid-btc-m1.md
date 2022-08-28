@@ -3,6 +3,7 @@ title: COVID, BTC, M1
 date: 2021/01/09
 description: The 3 things that changed the way I think during 2020.
 author: Shu
+image: https://shud-og.vercel.app/api/og?title=COVID, BTC, M1.&s=1234710a
 ---
 
 # COVID, BTC, M1

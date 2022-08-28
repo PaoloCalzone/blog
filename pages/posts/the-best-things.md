@@ -2,6 +2,7 @@
 title: The Best Things
 date: 2019/07/15
 description: A list of the best things. Carefully chosen.
+image: https://shud-og.vercel.app/api/og?title=The Best Things.&s=12348659
 ---
 
 # The Best Things
