@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   canvas-confetti: ^1.5.1
@@ -13,9 +13,9 @@ specifiers:
 dependencies:
   canvas-confetti: 1.5.1
   gray-matter: 4.0.3
-  next: 12.1.6_react-dom@18.1.0+react@18.1.0
+  next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
   nextra: 2.0.0-alpha.56_react@18.1.0
-  nextra-theme-blog: 2.0.0-alpha.55_d30c2367b03c877b70a67c330200ac54
+  nextra-theme-blog: 2.0.0-alpha.55_2mgcgz5qhsdxw4fgpqzqeafmkq
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   rss: 1.2.2
@@ -1164,19 +1164,19 @@ packages:
     hasBin: true
     dev: false
 
-  /next-themes/0.2.0_d30c2367b03c877b70a67c330200ac54:
+  /next-themes/0.2.0_2mgcgz5qhsdxw4fgpqzqeafmkq:
     resolution: {integrity: sha512-myhpDL4vadBD9YDSHiewqvzorGzB03N84e+3LxCwHRlM/hiBOaW+UsKsQojQAzC7fdcJA0l2ppveXcYaVV+hxQ==}
     peerDependencies:
       next: '*'
       react: '*'
       react-dom: '*'
     dependencies:
-      next: 12.1.6_react-dom@18.1.0+react@18.1.0
+      next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
     dev: false
 
-  /next/12.1.6_react-dom@18.1.0+react@18.1.0:
+  /next/12.1.6_ef5jwxihqo6n7gxfmzogljlgcm:
     resolution: {integrity: sha512-cebwKxL3/DhNKfg9tPZDQmbRKjueqykHHbgaoG4VBRH3AHQJ2HO0dbKFiS1hPhe1/qgc2d/hFeadsbPicmLD+A==}
     engines: {node: '>=12.22.0'}
     hasBin: true
@@ -1218,7 +1218,7 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /nextra-theme-blog/2.0.0-alpha.55_d30c2367b03c877b70a67c330200ac54:
+  /nextra-theme-blog/2.0.0-alpha.55_2mgcgz5qhsdxw4fgpqzqeafmkq:
     resolution: {integrity: sha512-UZoNDqCGvUU5fclz491r1TjN4gwmntsr71Lex3J5coaq/5PdHor3welM/TU6T+0rmuhVBd4v4kxuFETLHT6+Ug==}
     peerDependencies:
       next: '>=9.5.3'
@@ -1227,10 +1227,10 @@ packages:
     dependencies:
       '@mdx-js/react': 2.1.1_react@18.1.0
       github-slugger: 1.4.0
-      next: 12.1.6_react-dom@18.1.0+react@18.1.0
-      next-themes: 0.2.0_d30c2367b03c877b70a67c330200ac54
+      next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
+      next-themes: 0.2.0_2mgcgz5qhsdxw4fgpqzqeafmkq
       react: 18.1.0
-      react-cusdis: 2.1.3_react-dom@18.1.0+react@18.1.0
+      react-cusdis: 2.1.3_ef5jwxihqo6n7gxfmzogljlgcm
       react-dom: 18.1.0_react@18.1.0
     dev: false
 
@@ -1302,7 +1302,7 @@ packages:
     resolution: {integrity: sha512-hrzC564QIl0r0vy4l6MvRLhafmUowhO/O3KgVSoXIbbA2Sz4j8HGpJc6T2cubRVwMwpdiG/vKGfhT4IixmKN9w==}
     dev: false
 
-  /react-cusdis/2.1.3_react-dom@18.1.0+react@18.1.0:
+  /react-cusdis/2.1.3_ef5jwxihqo6n7gxfmzogljlgcm:
     resolution: {integrity: sha512-fUJOAUY7a3y21fNzlRWUSTr/ZMsejQAYWIWdsNuBPPZHbUrBvke/8Gw4OL5Mlrth7jLw8VTNssX0WBX5/prorQ==}
     peerDependencies:
       react: ^17.0.0
