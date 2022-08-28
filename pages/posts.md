@@ -3,6 +3,7 @@ type: page
 title: Thoughts
 date: 2020-01-04
 description: Thoughts on life, work, and everything else.
+image: https://shud-og.vercel.app/api/og?title=Thoughts.&s=12346792
 ---
 
 # Thoughts

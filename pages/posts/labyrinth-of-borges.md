@@ -3,6 +3,7 @@ title: 走入博尔赫斯的迷宫
 date: 2020/06/07
 author: Shu
 description: 记录一个梦。
+image: https://shud-og.vercel.app/api/og?title=走入博尔赫斯的迷宫&s=12480c98
 ---
 
 # 走入博尔赫斯的迷宫
