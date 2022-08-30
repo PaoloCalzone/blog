@@ -16,7 +16,10 @@ export default {
           property="og:image"
           content={meta.image || "https://shud.in/logo.png"}
         />
-        <meta property="twitter:card" content="summary" />
+        <meta
+          property="twitter:card"
+          content={meta.image ? "summary_large_image" : "summary"}
+        />
         <meta property="twitter:site" content="@shuding_" />
         <meta property="twitter:title" content={meta.title} />
         <meta property="twitter:description" content={meta.description} />

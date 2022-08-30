@@ -3,7 +3,7 @@ title: On UI Animations
 date: 2020/05/27
 author: Shu
 description: Some unpolished quick notes on when and how we should design and use UI animations in a web application.
-image: https://shud-og.vercel.app/api/og?title=On UI Animations.&s=12348e60
+image: https://shud-og.vercel.app/api/og?title=On UI Animations.
 ---
 
 # On UI Animations

@@ -3,7 +3,7 @@ title: Notes on A Programmable Web by Aaron Swartz
 date: 2016/05/21
 description: At the time when I was getting into web development, I had the chance to read one of the most inspiring book about the web, Aaron Swartz's A Programmable Web. And it completely changed my mind. 
 author: Shu
-image: https://shud-og.vercel.app/api/og?title=Notes on A Programmable Web by Aaron Swartz.&s=1235b51a
+image: https://shud-og.vercel.app/api/og?title=Notes on A Programmable Web by Aaron Swartz.
 ---
 
 # Notes on A Programmable Web by Aaron Swartz

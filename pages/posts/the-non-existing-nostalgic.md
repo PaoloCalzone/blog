@@ -3,7 +3,7 @@ title: 不存在的乡愁
 date: 2019/11/13
 author: Shu
 description: “I want to feel nostalgic, I want to feel like there’s this place, just a couple subway stops away, where everything will be alright.”
-image: https://shud-og.vercel.app/api/og?title=不存在的乡愁&s=123c08a8
+image: https://shud-og.vercel.app/api/og?title=不存在的乡愁
 ---
 
 # 不存在的乡愁

@@ -3,7 +3,7 @@ type: page
 title: Insites
 date: 2020-01-03
 description: Interesting, inspirational, insightful interfaces, interactions and innovations. By Shu Ding.
-image: https://shud-og.vercel.app/api/og?title=Insites.&s=123463d1
+image: https://shud-og.vercel.app/api/og?title=Insites.
 ---
 
 # Insites

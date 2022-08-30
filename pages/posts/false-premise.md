@@ -3,7 +3,7 @@ title: 伪命题
 date: 2015/05/15
 description: 这篇文章由我二零一三至二零一七大学四年期间零零散散的日记和随手笔记整理而成。大多杂乱无章，段落间并无逻辑；又各有语境，无所谓对错。但弃之可惜，我只在此写下，以作记录。
 author: Shu
-image: https://shud-og.vercel.app/api/og?title=伪命题&s=12371864
+image: https://shud-og.vercel.app/api/og?title=伪命题
 ---
 
 # 伪命题
