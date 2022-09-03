@@ -14,14 +14,16 @@ import Image from "next/image"
 import photography from "../public/images/photography.jpeg"
 import creativeCoding from "../public/images/creative-coding.jpeg"
 
-[<Image src={photography} alt="Photography" placeholder="blur"/>](https://works.shud.in)
+<a href="https://works.shud.in" title="Photography" target="_blank" className="figure">
+  <Image src={photography} alt="Photography" placeholder="blur"/>
+</a>
 
-<div style={{ textAlign: "right" }}>[Photography ↗](https://works.shud.in)</div>
+<p style={{ textAlign: "right" }}>[Photography ↗](https://works.shud.in)</p>
 
 And creative coding projects:
 
-[<Image src={creativeCoding} alt="Creative Coding" placeholder="blur"/>](https://works.shud.in/creative-coding)
+<a href="https://works.shud.in/creative-coding" title="Creative Coding" target="_blank" className="figure">
+  <Image src={creativeCoding} alt="Creative Coding" placeholder="blur"/>
+</a>
 
-<div style={{ textAlign: "right" }}>
-  [Creative Coding ↗](https://works.shud.in/creative-coding)
-</div>
+<p style={{ textAlign: "right" }}>[Creative Coding ↗](https://works.shud.in/creative-coding)</p>
