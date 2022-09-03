@@ -1,7 +1,7 @@
 ---
 title: Adaptive Polynominal Curve Fitting
 date: 2022/08/31
-description: An easy way to avoid overfitting.
+description: A simple way to find a good polynomial regression curve and avoid overfitting.
 author: Shu
 image: https://shud.in/images/adaptive-polynominal-curve-fitting-og.png
 ---
