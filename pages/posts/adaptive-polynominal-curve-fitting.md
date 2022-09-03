@@ -81,6 +81,6 @@ Read about this product change in our [changelog](https://vercel.com/changelog/i
 
 ## Appendix: Future Improvements
 
-While this already solved our problem in way, I still saw many opportunities to further improve it when doing the research. One idea is to switch to [Locally Estimated Scatterplot Smoothing (LOESS)](https://en.wikipedia.org/wiki/Local_regression#:~:text=Local%20regression%20or%20local%20polynomial,moving%20average%20and%20polynomial%20regression.) with a large bandwidth instead of polynomial regression, because it is “local”: website performance will unlikely to continue grow in a “prediected direction” unless a change has been made, it will instead be mostly stable.
+While this already solved our problem, I still found many other opportunities to further improve it when I was doing the research. One idea is to switch to [Locally Estimated Scatterplot Smoothing (LOESS)](https://en.wikipedia.org/wiki/Local_regression#:~:text=Local%20regression%20or%20local%20polynomial,moving%20average%20and%20polynomial%20regression.) with a large bandwidth instead of polynomial regression, because it is “local”: website performance will unlikely to continue grow in a “prediected direction” unless a change has been made, it will instead be mostly stable.
 
-But at the end of the day, I believe that we need more research to make that decision. There is no single solution to all problems.
+But at the end of the day, I believe that we need more time and experiments to make that decision since there is no single solution to all problems.
