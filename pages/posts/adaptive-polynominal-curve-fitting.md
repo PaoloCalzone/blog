@@ -6,27 +6,36 @@ author: Shu
 image: https://shud.in/images/adaptive-polynominal-curve-fitting-og.png
 ---
 
-Last month I worked on a side project internally during Vercel’s “Design Your Friday” (do whatever you want on every month’s first Friday), to improve the data visualization of our [Analytics](https://vercel.com/analytics) charts. 
+**Disclaimer**: This is not a professional article about machine learning. It’s a good application of the knowledge that helped us to solve a real problem in data visualization.
 
-Vercel Analytics collects [web vitals](https://web.dev/vitals) data automatically from your website visitors, and shows you insights on the dashboard. Previously, we were visualizing all the data by simply plotting a line chart as the example shown below:
+## Summary
+
+Last month I worked on a side project internally during Vercel’s Design Your Friday[^1], to improve the data visualization of our Analytics[^2] charts. Previously, all the data points were visualized by simply connected as a line chart:
+
+[^1]: Do whatever you want on every month’s first Friday.
+[^2]: [Vercel Analytics](https://vercel.com/analytics) collects [web vitals](https://web.dev/vitals) data automatically from your site visitors, and shows insights on your dashboard.
 
 <figure>![Old analytics chart](../../public/images/analytics-old.png)</figure>
 
-It’s a beautiful chart, but with a couple of problems noticed. As a developer, I’m interested in how my website performs in the past weeks, and the prediction for the future.
+It’s actually hard to read the **trend** from that chart because it’s too noisy. And the delta showed a “-0.15” decrease, which feels wrong. After the improvement, it uses a smooth curve to visualize the trend and measure the delta more accurately:
 
-But it’s hard to read the **trend** from the chart, because it’s too noisy: it seems to be increasing; However the indicator told me it has decreased by 0.15s, what’s wrong?
+<figure>![New analytics chart](../../public/images/analytics-new.png)</figure>
 
-It turned out that in the chart, we just connect all the data points we sampled, and use the difference between the first and last one as the “trend”:
+## The Problems
+
+There are two main problems in the old visualization. First, it displays **all** data points on the chart, which is too noisy. Second, the delta data was calculated by substracting the last and first sampled data, which is quite unreasonable:
 
 <figure style={{ border: 'none', background: '#6b6b6b' }}>![Old analytics chart with first and last data points highlighted](../../public/images/analytics-old-2.png)</figure>
 
-That explains why it shows “-0.15”, apparently all the data points between that preiod were ignored. As long as the most recent data point shows a better result (could be one visitor with extremely good network connection), the chart will conclude that my website is performing well.
+While it shows “-0.15”, all the data in between were completely ignored. As long as the most recent data point shows a better result (could be one visitor with extremely good network connection), the chart will conclude that my website is performing well.
+
+After some research, I found that [curve fitting](https://en.wikipedia.org/wiki/Curve_fitting) is a simple way to solve both problems. We need a curve that represents the overall trend of our data of a time series, with as few noises as possible.
 
 ## Curve Fitting
 
-Analyzing and finding the estimation of data points is a common but tricky problem. In our case, we are looking for a curve, that represents the overall trend of our data points of a time series, with as few noises as possible. That process is also called [curve fitting](https://en.wikipedia.org/wiki/Curve_fitting). 
+To start, I built an example that uses the palmerpenguins dataset[^3] to visualize the relationship between the bill length and depth of sampled penguins. It’s a bit noisy like our Analytics chart:
 
-To start, I built an example based on Philippe Rivière’s [notebook](https://observablehq.com/@fil/plot-regression). It uses the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins) dataset to visualize the relationship between the [bill length and bill depth](https://allisonhorst.github.io/palmerpenguins/#bill-dimensions) of sampled penguins. It’s a bit noisy like our Analytics chart:
+[^3]: [A dataset of penguin](https://allisonhorst.github.io/palmerpenguins) measurements from three different species and three islands in the Palmer Archipelago, Antarctica.
 
 <iframe width="100%" frameBorder="0" style={{ maxHeight: 476, aspectRatio: '5/4', borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=RegressionLinear"></iframe>
 
@@ -78,6 +87,10 @@ Finally, we can use that regression curve for the actual visualization and estim
 The delta (+0.13s) is much more accurate now, and the curve clearly shows the trend of the data. Meanwhile the exact data points are still presented to indicate the actual distribution.
 
 Read about this product change in our [changelog](https://vercel.com/changelog/improved-accuracy-for-vercel-analytics-charts) and follow other updates!
+
+## Special Thanks
+
+Thanks to [**Instante**](https://twitter.com/instante_42) and [**Yiming Chen**](https://twitter.com/dsdshcym) for reviewing this post and [**Guillermo Rauch**](https://twitter.com/rauchg) for pointing out a typo.
 
 ## Appendix: Future Improvements
 

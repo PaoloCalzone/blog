@@ -257,3 +257,7 @@ figure,
   border: 1px solid #c3c3c3;
   border-radius: 3px;
 }
+
+a[data-footnote-ref] {
+  text-decoration: none;
+}
