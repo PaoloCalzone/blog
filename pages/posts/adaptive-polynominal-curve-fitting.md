@@ -12,7 +12,7 @@ Vercel Analytics collects [web vitals](https://web.dev/vitals) data automaticall
 
 <figure>![Old analytics chart](../../public/images/analytics-old.png)</figure>
 
-It’s a beautiful chart, but with a couple of problems noticed. As a developer, I’m intersted in how my website performs in the past weeks, and the prediction for the future.
+It’s a beautiful chart, but with a couple of problems noticed. As a developer, I’m interested in how my website performs in the past weeks, and the prediction for the future.
 
 But it’s hard to read the **trend** from the chart, because it’s too noisy: it seems to be increasing; However the indicator told me it has decreased by 0.15s, what’s wrong?
 
@@ -38,7 +38,7 @@ Linear regression is just a special case of [**polynomial regression**](https://
 
 If **order** is N, the polynomial function will have a degree of N and the curve will have N-1 turning points (so 1 is a straight line).
 
-The [**MSE (mean squared error)**](https://en.wikipedia.org/wiki/Mean_squared_error) value measures the goodness of the fit of the curve to the data, by definition it’s: **MSE = (value - predictedValue)<sup>2</sup> / dataNum**. The smaller the error is, the better the curve describes the given data.
+The [**MSE (mean squared error)**](https://en.wikipedia.org/wiki/Mean_squared_error) value measures the goodness of the fit of the curve to the data, by definition it’s: **MSE = Σ(value - predictedValue)<sup>2</sup> / dataNum**. The smaller the error is, the better the curve describes the given data.
 
 Usually, the easy solution would be manually choosing a reasonable order and hardcode it in our visualization. That’s what a lot of people do and in many cases it should be okay. However when we don’t know the behavior of the data (is it constantly increasing or decreasing? is it periodic?), it’s hard to choose a good order.
 
