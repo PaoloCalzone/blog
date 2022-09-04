@@ -46,7 +46,7 @@ As you can already find out, a **higher order** will result in a more “accurat
 
 You can play with the example below: it generates some fake data points with some normal distribution randomess, and calculates the regression curve with it. For the “Constant” data set, it’s better to just use a straight line to fit (**order = 1**). However, for “Quadratic” data, selecting **order = 2** will be way better.
 
-<iframe width="100%" height="608" frameBorder="0" style={{ borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=RegressionLinear1%2Cviewof+rOrder%2Cviewof+rData%2Cviewof+rType"></iframe>
+<iframe width="100%" frameBorder="0" style={{ maxHeight: 608, aspectRatio: '12/17', borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=RegressionLinear1%2Cviewof+rOrder%2Cviewof+rData%2Cviewof+rType"></iframe>
 
 ## The Good Fit
 
@@ -56,7 +56,7 @@ That is, a very foundational concept in Machine Learning and Data Science, to sp
 
 In our real-world problem, we don’t actually have a training set and a test set (we can’t generating these random data) and all we have are the numbers collected from our production. But we can just simply choose some data points and use them as the training set, and the remaining ones become the test set. To make the algorithm determinsitic, I just split our points by odd and even indexes.
 
-<iframe width="100%" height="638" frameBorder="0" style={{ borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=Regression1%2Cviewof+orderT%2Cequation2"></iframe>
+<iframe width="100%" frameBorder="0" style={{ maxHeight: 638, aspectRatio: '2/3', borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=Regression1%2Cviewof+orderT%2Cequation2"></iframe>
 
 export const trainingSet = <span style={{ width: 10, height: 10, borderRadius: 10, background: 'steelblue', display: 'inline-block' }}/>
 export const testSet = <span style={{ width: 10, height: 10, borderRadius: 10, background: 'orange', display: 'inline-block' }}/>
@@ -65,7 +65,7 @@ As shown in the example above, we use the {trainingSet} **training set** to calc
 
 Ideally a good fit should have a low error for both sets, as it shouldn’t be overfitting only the training set. Hence we use a simple but intuitive equation **error = max(MSE(training set), MSE(test set))** to measure the “overall goodness” of the fit for the entire data set. Usually when we increase the order of the polynomial regression, the error will decrease (underfitting), hit a good fit, then increase again (overfitting).
 
-<iframe width="100%" height="476" frameBorder="0" style={{ borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=error"></iframe>
+<iframe width="100%" frameBorder="0" style={{ maxHeight: 476, aspectRatio: '5/4', borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=error"></iframe>
 
 The chart above demonstrates the overall error “**max(MSE(training set), MSE(test set))**” when the polynomial regression order increases. It’s clear that when the order is 2, we have the best fit for the entire data which is what we can feel intuitively from the interactive example.
 
