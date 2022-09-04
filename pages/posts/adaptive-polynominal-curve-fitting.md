@@ -28,11 +28,11 @@ Analyzing and finding the estimation of data points is a common but tricky probl
 
 To start, I built an example based on Philippe Rivière’s [notebook](https://observablehq.com/@fil/plot-regression). It uses the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins) dataset to visualize the relationship between the [bill length and bill depth](https://allisonhorst.github.io/palmerpenguins/#bill-dimensions) of sampled penguins. It’s a bit noisy like our Analytics chart:
 
-<iframe width="100%" height="476" frameBorder="0" style={{ maxHeight: 476, aspectRatio: '5/4', borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=RegressionLinear"></iframe>
+<iframe width="100%" frameBorder="0" style={{ maxHeight: 476, aspectRatio: '5/4', borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=RegressionLinear"></iframe>
 
 There are many existing algorithms to calculate the fitting curve for a given set of data points, if you already know the type of the curve that you are looking for. The easiest way is to do a [linear regression](https://en.wikipedia.org/wiki/Linear_regression): finding a straight line to describe the data:
 
-<iframe width="100%" height="591" frameBorder="0" style={{ borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=Regression%2Cviewof+param%2Cequation"></iframe>
+<iframe width="100%" frameBorder="0" style={{ maxHeight: 591, aspectRatio: '12/17', borderRadius: 3, backgroundColor: 'white' }} src="https://observablehq.com/embed/@shu/plot-regression?cells=Regression%2Cviewof+param%2Cequation"></iframe>
 
 Linear regression is just a special case of [**polynomial regression**](https://en.wikipedia.org/wiki/Polynomial_regression) where the order is 1. You can drag the slider above to see how different polynomial orders affect the fitting curve.
 
