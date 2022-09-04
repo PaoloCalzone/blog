@@ -42,6 +42,13 @@ export function Preview({ code }) {
   *::first-letter {
     text-transform: uppercase;
   }
+  @media not all and (min-resolution:.001dpcm){
+    @supports (-webkit-appearance:none) {
+      * {
+        word-spacing: -0.25em !important;
+      }
+    }
+  }
   `}/>
 
 ```css
