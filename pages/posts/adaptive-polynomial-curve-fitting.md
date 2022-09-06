@@ -88,12 +88,12 @@ The delta (+0.13s) is much more accurate now, and the curve clearly shows the tr
 
 Read about this product change in our [changelog](https://vercel.com/changelog/improved-accuracy-for-vercel-analytics-charts) and follow other updates!
 
-## Special Thanks
-
-Thanks to [**Instante**](https://twitter.com/instante_42) and [**Yiming Chen**](https://twitter.com/dsdshcym) for reviewing this post and [**Guillermo Rauch**](https://twitter.com/rauchg) for pointing out a typo.
-
 ## Appendix: Future Improvements
 
 While this already solved our problem, I still found many other opportunities to further improve it when I was doing the research. One idea is to switch to [Locally Estimated Scatterplot Smoothing (LOESS)](https://en.wikipedia.org/wiki/Local_regression#:~:text=Local%20regression%20or%20local%20polynomial,moving%20average%20and%20polynomial%20regression.) with a large bandwidth instead of polynomial regression because it is “local”: website performance will unlikely to continue grow in a “predicted direction” unless a change has been made, it will instead be mostly stable.
 
 But at the end of the day, I believe that we need more time and experiments to make that decision since there is no single solution to all problems.
+
+## Special Thanks
+
+Thanks to [**Instante**](https://twitter.com/instante_42) and [**Yiming Chen**](https://twitter.com/dsdshcym) for reviewing this post and [**Guillermo Rauch**](https://twitter.com/rauchg) for pointing out a typo.
